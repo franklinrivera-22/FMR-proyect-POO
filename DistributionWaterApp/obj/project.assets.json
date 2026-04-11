@@ -2515,11 +2515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muril\\Documents\\Proyecto Agua\\Distribucion-Agua\\DistributionWaterApp\\DistributionWaterApp.csproj",
+      "projectUniqueName": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
       "projectName": "DistributionWaterApp",
-      "projectPath": "C:\\Users\\muril\\Documents\\Proyecto Agua\\Distribucion-Agua\\DistributionWaterApp\\DistributionWaterApp.csproj",
+      "projectPath": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
       "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muril\\Documents\\Proyecto Agua\\Distribucion-Agua\\DistributionWaterApp\\obj\\",
+      "outputPath": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config"

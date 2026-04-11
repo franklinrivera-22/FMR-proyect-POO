@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vJWHVBRZPyg=",
+  "dgSpecHash": "mXB6VxPhs18=",
   "success": true,
-  "projectFilePath": "C:\\Users\\muril\\Documents\\Proyecto Agua\\Distribucion-Agua\\DistributionWaterApp\\DistributionWaterApp.csproj",
+  "projectFilePath": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muril\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\muril\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
