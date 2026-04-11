@@ -1,0 +1,6 @@
+@DistributionWaterApp_HostAddress = http://localhost:5002
+
+GET {{DistributionWaterApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
