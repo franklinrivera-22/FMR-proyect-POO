@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DistributionWaterApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61468f2d90de54cc16dcd3b92bcf5418063e4e28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9adb7b828303873d5cf19cf939d194e421e5eb48")]
 [assembly: System.Reflection.AssemblyProductAttribute("DistributionWaterApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DistributionWaterApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

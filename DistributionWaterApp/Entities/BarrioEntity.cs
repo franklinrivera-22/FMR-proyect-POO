@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 
 namespace DistributionWaterApp.Entities
 {
-    [Table("zonas")]
-    public class ZonaEntity : BaseEntity
+    [Table("barrios")]
+    public class Barrio : BaseEntity
     {
         [Required]
-        [StringLength(50)]
-        [Column("nombre_zona")]
+        [StringLength(100)]
+        [Column("nombre")]
         public string Nombre { get; set; }
 
-        [Range(0, int.MaxValue)]
         [Column("cantidad_casas")]
         public int CantidadCasas { get; set; }
-       public virtual ICollection<TurnosAguaEntity> TurnosAgua { get; set; } = new List<TurnosAguaEntity>();
+        public virtual ICollection<TurnoAguaEntity> TurnosAgua { get; set; }
     }
 }
