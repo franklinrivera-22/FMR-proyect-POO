@@ -2510,19 +2510,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muril\\.nuget\\packages\\": {}
+    "C:\\Users\\Mariela Gonzales\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
+      "projectUniqueName": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
       "projectName": "DistributionWaterApp",
-      "projectPath": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
-      "packagesPath": "C:\\Users\\muril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muril\\Documents\\Nueva carpeta\\FMR-proyect-POO\\DistributionWaterApp\\obj\\",
+      "projectPath": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
+      "packagesPath": "C:\\Users\\Mariela Gonzales\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muril\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mariela Gonzales\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
