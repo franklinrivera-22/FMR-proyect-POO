@@ -1,0 +1,40 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH_URL}}/turnos-agua
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "barrioId": "237a6953-190c-499d-ba0a-265f9eeab58a",
+    "fecha": "2026-04-16",
+    "horaInicio": "08:00",
+    "horaFin": "15:00",
+    "estado": "Pendiente",
+    "observaciones": "-"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite registrar un nuevo turno de agua en el sistema.
+  
+  Se debe enviar un objeto con la siguiente estructura:
+  
+  - *barrioId* (string, requerido): ID del barrio al que pertenece el turno  
+  - *fecha* (string, requerido): Fecha del turno (formato ISO, ej: 2026-04-12)  
+  - *horaInicio* (string, requerido): Hora de inicio (formato HH:mm)  
+  - *horaFin* (string, requerido): Hora de finalización (formato HH:mm)  
+  - *estado* (string, requerido): Estado del turno (ej: Pendiente)  
+  - *observaciones* (string, opcional): Comentarios adicionales
+}

@@ -1,0 +1,48 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{PATH_URL}}/turnos-agua
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "barrioId": null,
+    "fecha": "",
+    "horaInicio": "",
+    "horaFin": "",
+    "estado": "",
+    "observaciones": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite eliminar la información de un turno de agua ya registrado en el sistema.
+  
+  - **id** (string, requerido): El identificador único del turno de agua que se desea eliminar.
+  
+  Retorna un objeto **ResponseDto** que contiene:
+  
+  - **statusCode**: código HTTP de la respuesta (ej: `200`)  
+  - **status**: booleano (`true`) si el registro fue eliminado correctamente  
+  - **message**: mensaje descriptivo (ej: `"Registro eliminado exitosamente"`)  
+  - **data**: objeto que contiene el **id** del turno eliminado  
+  
+  Estructura de `data`:
+  
+  - **id**: identificador único del turno eliminado  
+  
+  Algunos mensajes de error
+  - **200 OK**: El registro fue eliminado correctamente  
+  - **404 Not Found**: El ID proporcionado no existe en la base de datos
+}

@@ -1,0 +1,33 @@
+meta {
+  name: Get One
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PATH_URL}}/barrios/237a6953-190c-499d-ba0a-265f9eeab58a
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite recuperar la información detallada de un barrio específico utilizando su identificador único (ID).
+  
+  - *id* (string, requerido): El identificador único del barrio que se desea consultar (normalmente un GUID o un string).
+  
+  Retorna un objeto *ResponseDto* que contiene:
+  - *status*: booleano (true) indicando que el registro fue encontrado.
+  - *message*: mensaje descriptivo (ej: "Registro encontrado").
+  - *data*: Un objeto de tipo BarrioDto con los campos:
+    - id: Identificador del barrio.
+    - nombre: Nombre del barrio.
+    - cantidadCasas: Número de casas registradas.
+  
+  Algunos mensajes de error
+  - *404 Not Found*: Se retorna cuando el ID proporcionado no coincide con ningún barrio en la base de datos.
+}
