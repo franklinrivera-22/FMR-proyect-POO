@@ -1,0 +1,53 @@
+meta {
+  name: Get One
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PATH_URL}}/turnos-agua/d795aef5-47f2-4f8e-9e3b-8af3ed5bd310
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "barrioId": null,
+    "fecha": "",
+    "horaInicio": "",
+    "horaFin": "",
+    "estado": "",
+    "observaciones": ""
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite obtener la información de un turno de agua específico mediante su identificador único.
+  
+  - **id** (string, requerido): El identificador único del turno de agua.
+  
+  
+  Retorna un objeto **ResponseDto** que contiene:
+  
+  - **statusCode**: código HTTP de la respuesta (ej: `200`)
+  - **status**: booleano (`true`) si la consulta fue exitosa
+  - **message**: mensaje descriptivo (ej: `"Registro encontrado"`)
+  - **data**: objeto con la información del turno de agua
+  
+  - **id**: identificador único del turno  
+  - **barrio**: objeto con información del barrio  
+    - **id**: identificador del barrio  
+    - **nombre**: nombre del barrio  
+    - **cantidadCasas**: número de casas  
+  - **fecha**: fecha del turno  
+  - **horaInicio**: hora de inicio  
+  - **horaFin**: hora de finalización  
+  - **estado**: estado del turno (ej: `Pendiente`)  
+  - **observaciones**: comentarios adicionales
+}

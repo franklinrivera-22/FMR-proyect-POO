@@ -1,0 +1,34 @@
+meta {
+  name: Edite
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH_URL}}/barrios/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "",
+    "cantidadCasas": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite actualizar la información de un barrio ya registrado en el sistema.
+  
+  - *id* (string, requerido): El identificador único del barrio que se desea modificar.
+  
+  Se debe enviar un objeto JSON de tipo *BarrioEditDto* con los campos actualizados:
+  
+  - *nombre* (string, requerido): El nuevo nombre del barrio (2-100 caracteres).
+  - *cantidadCasas* (int, requerido): La nueva cantidad de casas (1-10,000).
+}

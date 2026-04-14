@@ -1,0 +1,39 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{PATH_URL}}/barrios/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "",
+    "cantidadCasas": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite eliminar permanentemente un barrio del sistema, siempre y cuando no tenga dependencias activas.
+  
+  - *id* (string, requerido): El identificador único del barrio que se desea eliminar.
+  
+  Retorna un objeto *ResponseDto* que contiene:
+  
+  - *status*: booleano (true) si el barrio fue borrado correctamente.
+  - *message*: mensaje descriptivo (ej: "Registro eliminado exitosamente").
+  - *data: Un objeto que contiene el **id* del barrio que acaba de ser eliminado.
+  
+  Algunos mensajes de error
+  
+  - *404 Not Found*: El ID proporcionado no existe en la base de datos.
+}
