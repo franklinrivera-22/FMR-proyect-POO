@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\PROYECTOPOO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj": {}
+    "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\PROYECTOPOO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj": {
+    "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\PROYECTOPOO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
         "projectName": "DistributionWaterApp",
-        "projectPath": "C:\\Users\\PC\\Desktop\\PROYECTOPOO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\PROYECTOPOO\\FMR-proyect-POO\\DistributionWaterApp\\obj\\",
+        "projectPath": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\DistributionWaterApp.csproj",
+        "packagesPath": "C:\\Users\\Mariela Gonzales\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mariela Gonzales\\Desktop\\ProyectoPoo\\FMR-proyect-POO\\FMR-proyect-POO\\DistributionWaterApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mariela Gonzales\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
