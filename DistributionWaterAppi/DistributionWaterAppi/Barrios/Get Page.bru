@@ -1,0 +1,42 @@
+meta {
+  name: Get Page
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PATH_URL}}/barrios?searchTerm&page=1&pageSize=10
+  body: json
+  auth: inherit
+}
+
+params:query {
+  searchTerm: 
+  page: 1
+  pageSize: 10
+}
+
+body:json {
+  {
+    "nombre": "",
+    "cantidadCasas": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint retorna una lista de barrios almacenados en el sistema, permitiendo búsqueda por nombre y paginación de resultados.
+  
+  - **searchTerm** (string, opcional): Término de búsqueda que se comparará con el nombre del barrio.
+  - **page** (int, opcional): Número de la página que se desea recuperar.
+  - **pageSize** (int, opcional): Cantidad de barrios por cada página (Máximo permitido: 50).
+  
+  Retorna un objeto *ResponseDto* que contiene:
+  - *status*: booleano indicando el éxito.
+  - *message*: mensaje descriptivo del resultado.
+  - *data*: objeto con la lista de ítems (*items*) y metadata de paginación (*totalPages*, *totalItems*, *hasNextPage*, etc.).
+}

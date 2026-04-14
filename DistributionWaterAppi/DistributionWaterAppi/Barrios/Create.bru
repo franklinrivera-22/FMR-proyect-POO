@@ -1,0 +1,32 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH_URL}}/barrios
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "Barrio San Cayetano",
+    "cantidadCasas": 50
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite registrar un nuevo barrio en el sistema proporcionando su información básica.
+  
+  Se debe enviar un objeto JSON de tipo *BarrioCreateDto* con los siguientes campos:
+  
+  - *nombre* (string, requerido): El nombre del barrio. Debe tener entre 2 y 100 caracteres.
+  - *cantidadCasas* (int, requerido): La cantidad de viviendas en el barrio. Debe ser un valor entre 1 y 10,000.
+}

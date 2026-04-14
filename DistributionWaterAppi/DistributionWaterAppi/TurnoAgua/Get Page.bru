@@ -1,0 +1,44 @@
+meta {
+  name: Get Page
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PATH_URL}}/turnos-agua?searchTerm&page=1&pageSize=10
+  body: json
+  auth: inherit
+}
+
+params:query {
+  searchTerm: 
+  page: 1
+  pageSize: 10
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Este endpoint permite recuperar la información detallada de un turno de agua específico utilizando su identificador único.
+  
+  - **id** (string, requerido): El identificador único del turno de agua que se desea consultar.
+  
+  Retorna un objeto **ResponseDto** que contiene:
+  
+  - **status**: booleano (`true`) indicando que el turno fue encontrado.
+  - **message**: mensaje descriptivo del resultado (ej: "Registro encontrado").
+  - **data**: Un objeto de tipo **TurnoAguaDto** que incluye:
+    - `id`: Identificador del turno.
+    - `barrioId`: ID del barrio vinculado.
+    - `nombreBarrio`: Nombre del barrio para facilitar la lectura.
+    - `fecha`: Fecha programada del turno.
+    - `horaInicio` y `horaFin`: Rango horario del suministro.
+    - `estado`: Estado actual (Pendiente, En curso, Completado).
+  
+  Algunos mensajes de error 
+  - **404 Not Found**: El ID proporcionado no corresponde a ningún turno de agua registrado.
+  -
+}
